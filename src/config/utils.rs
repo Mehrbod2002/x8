@@ -169,7 +169,7 @@ pub fn write_banner_config(config: &Config, params: &Vec<String>) {
         )
     }
 
-    let _ = file_writer(config, &(output.clone() + "\n\n\n"));
+    let _ = file_writer(config, &(output.clone() + "\n\n"));
 
     writeln!(io::stdout(), "{}\n", output).ok();
 }
